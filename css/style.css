@@ -1,0 +1,266 @@
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    -webkit-transition: all .20s ease;
+    transition: all .20 ease;
+}
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images/osman-rana.jpg");
+
+    /* Set a specific height */
+    height: 100%; 
+
+    padding-top: 150px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallaxText{
+    text-align: center;
+    display: block;
+}
+
+#parallaxText #name{
+    color: whitesmoke;
+    /* font-size: 40px; */
+    margin-bottom: 10px;
+}
+
+#parallaxText #fsd{
+    color: #F97666;
+    font-size: 70px;
+    line-height: 1;
+}
+
+@media (max-width: 540px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 720px) {
+    .navbar i {
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+
+    .navbar{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        height: 50px; 
+        background-color: #F97666;  
+    }
+    
+    .navbar i{
+        font-size: 30px;
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        color: black;
+    }
+    
+    .navbar.scrolled {
+        background-color: #F97666 !important;
+        transition: background-color 190ms linear;
+    }
+    
+    .navbar ul{ 
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        overflow: hidden;
+        background-color: #F97666;
+        list-style-type: none;
+        width: 100%;
+        /* height: 0; */
+        top: 49px;
+        left:-100vw;
+    }
+    
+    .navbar.toggled ul{
+        left:0;
+    }
+
+    .navbar li a{
+        display: block;
+        color: white;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+    
+    .navbar li a:hover:not(.active) {
+        color: #F97666;
+    } 
+    
+    .navbar.scrolled li a:hover:not(.active) {
+        color: darkslategray;
+    } 
+    
+}
+
+@media (min-width: 720px){
+    .navbar{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        padding: 5px;
+        z-index: 1000;
+    }
+
+    .navbar.scrolled {
+        background-color: #F97666 !important;
+        transition: background-color 190ms linear;
+    }
+
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+        /* display: inline-block; */
+        overflow: hidden;
+        background-color: transparent;
+        list-style-type: none;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul li{
+        float: left;
+    }
+
+    .navbar li a{
+        display: block;
+        color: white;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover:not(.active) {
+        color: #F97666;
+    } 
+
+    .navbar.scrolled li a:hover:not(.active) {
+        color: darkslategray;
+    } 
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+}
+
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.cursive{
+    font-family: 'Dancing Script', cursive;
+}
+
+.desc{
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.section{
+    padding: 20px;
+}
+
+#about{
+    background-color: whitesmoke;
+}
+
+#about img{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+div.shortDivider{
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: #F97666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1px;
+}
+
+#skills{
+    background-color: #efefef;
+}
+
+.skill-card{
+    background-color: #3c4257;
+    padding: 10px 20px 15px 20px;
+    margin: 25px 20px 25px 0px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2.5s linear;
+    height: 100px;
+    width: 200px
+}
+
+.skill-card:hover {
+    background-color: #0c132e;
+    transform: scale(1.05);
+}
+
+.skill-card .title{
+    /* margin: 0;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: 'Noto Serif JP', sans-serif; */
+    transition: .1s linear;
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.skill-card .full-title{
+    color: white;
+    opacity: 0;
+    transition: .1.5s linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.skill-card:hover .full-title {
+    opacity: 1;
+}
+
+.skill-card:hover .title {
+    opacity: 0;
+}
+  
