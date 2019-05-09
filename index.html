@@ -30,18 +30,23 @@
             </div>
         </div>
         <div id="about" class="section">
-            <div class="container" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="container" data-aos="fade-in-up" data-aos-delay="300">
                 <div class="row justify-content-md-center">
                     <div class="col-md-4">
-                        <img src="images/08041801BLR.jpg" class="img-fluid" alt="Responsive image">
+                        <img src="images/portrait.jpg" class="img-fluid" alt="Responsive image">
                     </div>
                     <div class="col-md-5">
                         <h3 class="title">About Me</h3>
                         <div class="shortDivider"></div>
                         <p class="subtitle">Student, University of Technology, Jamaica (UTECH)</p>
                         <div class="shortDivider"></div>
-                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex magna, semper in odio sed, congue scelerisque lacus. Cras luctus eu velit quis semper. Donec consectetur ornare turpis, non rutrum mauris efficitur non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pellentesque nulla fringilla tincidunt tempus. Nullam fringilla eros vitae aliquam ornare. Fusce egestas id lacus sit amet cursus.
-                            Fusce auctor mi sit amet ante tempus condimentum. Duis nibh erat, sodales non semper et, dapibus et magna. Etiam vel eros iaculis magna commodo fermentum. Pellentesque et odio enim.</p>
+                        <p class="desc">
+                            My name is Ranil. I am a web designer and front end developer based in Jamaica. 
+                            Currently I am a student at the University of Technology, Jamaica, completing my Bachelor's degree in Computer Science. 
+                            Design is something I am very passionate about. 
+                            I enjoy taking complex problems and turning them into simple yet elegant inteface designs. 
+                            Together, we can make the web a beautiful place.
+                        </p>
                     </div>
                 </div>  
             </div>         
@@ -96,7 +101,26 @@
             </div>
         </div>
         <div id="contact">
-            
+            <div class="container" data-aos="fade-in-up" data-aos-delay="300">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="images/contact3.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-md-5">
+                        <h3 class="title">Contact Me</h3>
+                        <div class="shortDivider"></div>
+                        <form method="POST" action="/contactAction.php">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>  
+            </div> 
         </div>
     </body>
     <script src="js/aos.js"></script>

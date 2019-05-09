@@ -192,8 +192,10 @@ body, html{
     padding: 20px;
 }
 
-#about{
+
+#about, #contact{
     background-color: whitesmoke;
+    padding: 40px;
 }
 
 #about img{
@@ -213,10 +215,12 @@ div.shortDivider{
 
 #skills{
     background-color: #efefef;
+    padding: 40px;
 }
 
 .skill-card{
     background-color: #3c4257;
+    /* border: #b6b8c0 solid 0.5px; */
     padding: 10px 20px 15px 20px;
     margin: 25px 20px 25px 0px;
     border-radius: 6px;
@@ -234,10 +238,6 @@ div.shortDivider{
 }
 
 .skill-card .title{
-    /* margin: 0;
-    color: whitesmoke;
-    font-size: 50px;
-    font-family: 'Noto Serif JP', sans-serif; */
     transition: .1s linear;
     max-width: 100%;
     max-height: 90%;
@@ -262,5 +262,47 @@ div.shortDivider{
 
 .skill-card:hover .title {
     opacity: 0;
+}
+  
+
+#contact img{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#contact input[type=text], #contact input[type=email], #contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 15px;
+}
+
+#contact label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#contact input[type=submit] {
+    background-color: #F97666;
+    color: black;
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#contact input[type=submit]:hover {
+    background-color: #c75e51;
 }
   
